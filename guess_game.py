@@ -9,12 +9,16 @@ print("I'm thinking of a number between 1 and 20.")
 while True:
     guess = input("Take a guess: ")
     tries += 1
+    if guess == "cheat":
+        print(f"(👀 The number is {number})")
+        continue
 
     if not guess.isdigit():
         print("Please enter a number.")
         continue
 
     guess = int(guess)
+
 
     if guess < number:
         print("Too low!")
