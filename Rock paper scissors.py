@@ -15,9 +15,8 @@ while True:
         choice_name = "Rock"
     elif choice == 2:
         choice_name = "Paper"
-
     elif choice == 3:
-        choice_name = "scissors"
+        choice_name = "Scissors"
 
     print("Your choice is " + choice_name)
     print("now the computers turn")
@@ -41,7 +40,7 @@ while True:
         result = "Paper"
     elif (choice == 1 and comp_choice == 3) or (comp_choice == 1 and choice == 3):
         result = "Rock"
-    elif (choice == 2 and comp_choice == 3) or (comp_choice == 2 and choice == 2):
+    elif (choice == 2 and comp_choice == 3) or (comp_choice == 2 and choice == 3):
         result = "Scissors"
 
     if result == "DRAW":
